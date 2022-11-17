@@ -1,0 +1,107 @@
+.tp {
+    background-color: rgba(0 0 0 / 0.65);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top center;
+    background-position-x: 70%;
+    background-repeat: no-repeat;
+    background-image: url("../../images/tp/tp-bg.png");
+
+    color: var(--clr-neutral-100);
+
+    padding-block: var(--spacing);
+    min-height: 100vh;
+    position: relative;
+
+    @media (min-width: 1100px) {
+        background-color: var(--clr-accent-blue-dark);
+        background-blend-mode: unset;
+    }
+
+    h1 {
+        padding-top: var(--spacing);
+        padding-bottom: 4.375rem;
+        font-size: clamp(2rem, 3.5vw, 2.5rem);
+        max-width: 31ch;
+    }
+
+    p {
+        font-size: 1.25rem;
+        max-width: 42ch;
+    }
+
+    p + p {
+        margin-top: 2rem;
+    }
+
+    .container {
+        width: min(90%, 92em);
+    }
+
+    &__footer {
+        padding-top: 5.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        > div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        > img {
+            width: 19.875rem;
+            max-width: 100%;
+        }
+    }
+
+    .btn {
+        display: block !important;
+        min-width: 17rem;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        display: none;
+
+        &-mobile {
+            margin-top: 4rem;
+            display: flex;
+        }
+
+        @media (min-width: 45em) {
+            display: flex;
+
+            &-mobile {
+                display: none;
+            }
+        }
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        > div {
+            flex-shrink: 0;
+        }
+    }
+
+    .tp-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        @media (min-width: 1923px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/css/style.css" />
+    </head>
+    <body>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="form">
+                    <form>
+                        <input
+                            type="text"
+                            name="nome"
+                            placeholder="Nome*"
+                            data-field="text"
+                            data-message="Insira seu nome"
+                        />
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="E-mail Corporativo*"
+                            data-field="email"
+                            data-message="insira um email comercial"
+                        />
+
+                        <input
+                            type="tel"
+                            name="telefone"
+                            placeholder="Telefone*"
+                            maxlength="15"
+                            data-field="phone"
+                            data-message="Insira seu telefone"
+                        />
+
+                        <input
+                            type="text"
+                            name="empresa"
+                            placeholder="Empresa*"
+                            data-field="text"
+                            data-message="Insira sua empresa"
+                        />
+
+                        <input
+                            type="text"
+                            name="website"
+                            placeholder="Website "
+                            data-field="false"
+                        />
+
+                        <select
+                            name="Indique o seu cargo"
+                            data-field="select"
+                            data-message="Insira seu cargo"
+                        >
+                            <option value="">Indique o seu cargo*</option>
+                            <option value="Analista">Analista</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Diretor">Diretor</option>
+                            <option value="Proprietário">Proprietário</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+
+                        <select
+                            name="Faturamento"
+                            data-field="select"
+                            data-message="Insira seu faturamento"
+                        >
+                            <option value="">Faturamento*</option>
+                            <option value="Abaixo de 30 milhões">
+                                Abaixo de 30 milhões
+                            </option>
+                            <option value="Entre 30 e 99 milhões">
+                                Entre 30 e 99 milhões
+                            </option>
+                            <option value="Entre 100 e 400 milhões">
+                                Entre 100 e 400 milhões
+                            </option>
+                            <option value="Acima de 400 milhões">
+                                Acima de 400 milhões
+                            </option>
+                        </select>
+
+                        <input
+                            type="number"
+                            name="número de operações de lojas e pdv"
+                            data-field="number"
+                            placeholder="Número de Operações de lojas e PDV"
+                            data-message="Insira seu PDV"
+                        />
+
+                        <label class="mb-3">
+                            <input
+                                type="checkbox"
+                                name="consent"
+                                data-field="consent"
+                                data-message="Insira seu CONSENTIMENTO"
+                            />
+                            Estou ciente que meus dados serão armazenados para fins de
+                            contato e ficarão sob responsabilidade da SEIDOR.
+                        </label>
+
+                        <input type="hidden" name="utm_term" data-field="false" />
+                        <input type="hidden" name="utm_content" data-field="false" />
+                        <input type="hidden" name="utm_campaign" data-field="false" />
+                        <input type="hidden" name="utm_source" data-field="false" />
+                        <input type="hidden" name="utm_medium" data-field="false" />
+                        <input type="hidden" name="url_pagina" data-field="false" />
+
+                        <a class="btn form-submit">Quero conversar</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="js/validations.js"></script>
+        <!-- <script src="js/TESTE.js"></script> -->
+
+        <!-- RD Station -->
+        <script
+            type="text/javascript"
+            async
+            src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/16d0dacb-b605-419a-885b-73d9d994c96e-loader.js"
+        ></script>
+    </body>
+</html>
