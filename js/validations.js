@@ -1,4 +1,4 @@
-;(() => {
+;(function () {
     const fields = Array.from(document.querySelectorAll("[data-field]"))
     const buttonSubmit = document.querySelector(".form-submit")
 
